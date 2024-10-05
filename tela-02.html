@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Home</title>
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: #777;
+
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        div{
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        header{
+            height: 20vh;
+            background-color: red;
+            
+            position: sticky;
+            top: 0px;
+        }
+        main{
+            height: 282vh;
+            width: 100vw;
+
+            
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            overflow-y: scroll;
+
+            /* Custom scrollbar styles */
+
+        }
+        ::-webkit-scrollbar {
+            width: 20px; /* width of the entire scrollbar */
+            
+            }
+
+            ::-webkit-scrollbar-track {
+            background: blue; /* color of the tracking area */
+            
+            
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: #000; /* color of the scroll thumb */
+            
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* color of the scroll thumb on hover */
+            border-radius: 10%;
+            }
+        .card{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+        footer{
+            height: 9vh;
+            color: #fff;
+            background-color: blue;
+            border-radius: 30px;
+
+            gap: 20px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: row;
+            
+            
+            position: sticky;
+            bottom: 0px;
+        }
+        footer i{
+            font-size: 35px;
+            gap: 10px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        button{
+            margin-top: 7px;
+            width: 120px;
+            height: 60px;
+            border: 0;
+            border-radius: 28px;
+            color: blue;
+        }
+        button i{
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>Welcome home!</header>
+        <main>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </main>
+        <footer>
+            <button>
+                <i class="fa-solid fa-house"></i> 
+                Home 
+            </button>
+            <i class="fa-solid fa-bolt"></i>
+            <i class="fa-solid fa-headset"></i>
+            <i class="fa-solid fa-credit-card"></i>
+            <i class="fa-solid fa-id-card-clip"></i>
+        </footer>
+    </div>
+
+</body>
+</html>
