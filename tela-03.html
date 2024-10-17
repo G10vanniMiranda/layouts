@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Layout</title>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h3>Peony</h3>
+        <div>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="caixa-alta">Home</li>
+            <li class="caixa-alta">Novidades</li>
+            <li class="caixa-alta">BestSellers</li>
+            <li class="caixa-alta">Sapatos</li>
+            <li class="caixa-alta">Outlet</li>
+        </ul>
+    </nav>
+    <main>
+        <img src="./sandalias/sandalia-01.png" alt="">
+
+        <div>
+            <h2> New collection </h2>
+            <h2 class="caixa-alta"> horsebit </h2>
+            
+            <button class="caixa-alta">
+                clique aqui e confira!
+            </button>
+        </div>
+
+        <img id="img2" src="./sandalias/sandalia-01.png" alt="">
+    </main>
+    <section>
+        <div class="card">
+            <img src="./sandalias/sandalia-01.png" alt="">
+            <h2>NOVIDADES</h2>
+        </div>
+        <div class="card">
+            <img src="./sandalias/sandalia-01.png" alt="">
+            <h2>NOVIDADES</h2>
+        </div>
+        <div class="card">
+            <img src="./sandalias/sandalia-01.png" alt="">
+            <h2>NOVIDADES</h2>
+        </div>
+        <div class="card">
+            <img src="./sandalias/sandalia-01.png" alt="">
+            <h2>NOVIDADES</h2>
+        </div>
+        <div class="card">
+            <img src="./sandalias/sandalia-01.png" alt="">
+            <h2>NOVIDADES</h2>
+        </div>
+    </section>
+
+    <style>
+        *{ 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            list-style: none;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 80px;
+
+            display: flex;
+            color: #777;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        header div{
+            gap: 10px;
+            display: flex;
+        }
+        nav{
+            height: 60px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav ul {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: pink;
+        }
+        main img{
+            width: 40%;
+        }
+        #img2{
+            right: 10px;
+            transition: 2s;
+            transform: rotate(-30deg);
+            padding-bottom: 50px;
+        }
+        main div{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            max-width: 520px;
+            margin: auto;
+            height: 160px;
+            background-color: #fff;
+            
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section .card{
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+            cursor: pointer;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        section .card img{
+            padding: 10px;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: pink
+        }
+        section .card h2{
+            font-size: 14px;
+        }
+        /* classes helpes */
+        .caixa-alta{
+            text-transform: uppercase;
+        }
+    </style>
+</body>
+</html>
